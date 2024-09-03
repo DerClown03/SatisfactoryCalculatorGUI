@@ -1,0 +1,85 @@
+﻿<Application x:Class="SatisfactoryCalculatorGUI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SatisfactoryCalculatorGUI"
+             xmlns:viewModel="clr-namespace:SatisfactoryCalculatorGUI.MVVM.ViewModel"
+             xmlns:view="clr-namespace:SatisfactoryCalculatorGUI.MVVM.View"
+             xmlns:instructionsView="clr-namespace:SatisfactoryCalculatorGUI.MVVM.View.InstructionsView"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="theme/item_button.xaml"/>
+                <ResourceDictionary Source="theme/category_button.xaml"/>
+                <ResourceDictionary Source="theme/ItemQuantityTextBoxTheme.xaml"/>
+                <ResourceDictionary Source="theme/RecipeCard.xaml"/>
+                <ResourceDictionary Source="theme/HideTextBlockIfEmpty.xaml"/>
+                <ResourceDictionary Source="theme/HideImageIfEmpty.xaml"/>
+                <ResourceDictionary Source="theme/OrientationButton.xaml"/>
+                <ResourceDictionary Source="theme/WindowButton.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewModel:ResultsViewModel}">
+                <instructionsView:ResultsView/>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewModel:ItemQuantityViewModel}">
+                <instructionsView:ItemQuantityView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:RecipesViewModel}">
+                <instructionsView:RecipesView/>
+            </DataTemplate>
+            
+            
+            <DataTemplate DataType="{x:Type viewModel:CommunicationsViewModel}">
+                <view:communications_view/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:ConsumedViewModel}">
+                <view:consumed_view/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:ContainersViewModel}">
+                <view:containers_view/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:ElectronicsViewModel}">
+                <view:electronics_view/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:FuelsViewModel}">
+                <view:fuels_view/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:IndustrialPartsViewModel}">
+                <view:industrial_parts_view/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:IngotsViewModel}">
+                <view:ingots_view/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:LiquidsViewModel}">
+                <view:liquids_view/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:MineralsViewModel}">
+                <view:minerals_view/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:NuclearViewModel}">
+                <view:nuclear_view/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:SpecialViewModel}">
+                <view:special_view/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:StandardPartsViewModel}">
+                <view:standard_parts_view/>
+            </DataTemplate>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

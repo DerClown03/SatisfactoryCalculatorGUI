@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="SatisfactoryCalculatorGUI.MVVM.View.containers_view"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:viewModel="clr-namespace:SatisfactoryCalculatorGUI.MVVM.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <viewModel:MainViewModel x:Key="viewModel"/>
+    </UserControl.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Hidden">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="0" ContentStringFormat="Empty Canister" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="empty_canister">
+                <BitmapImage UriSource="/images\items\empty_canister.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="0" ContentStringFormat="Empty Fluid Tank" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="empty_fluid_tank">
+                <BitmapImage UriSource="/images\items\empty_fluid_tank.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="2" Grid.Row="0" ContentStringFormat="Pressure Conversion Cube" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="pressure_conversion_cube">
+                <BitmapImage UriSource="/images\items\pressure_conversion_cube.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="3" Grid.Row="0" ContentStringFormat="Packaged Water" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="packaged_water">
+                <BitmapImage UriSource="/images\items\packaged_water.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="1" ContentStringFormat="Packaged Alumina Solution" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="packaged_alumina_solution">
+                <BitmapImage UriSource="/images\items\packaged_alumina_solution.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="1" ContentStringFormat="Packaged Sulfuric Acid" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="packaged_sulfuric_acid">
+                <BitmapImage UriSource="/images\items\packaged_sulfuric_acid.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="2" Grid.Row="1" ContentStringFormat="Packaged Nitric Acid" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="packaged_nitric_acid">
+                <BitmapImage UriSource="/images\items\packaged_nitric_acid.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="3" Grid.Row="1"  ContentStringFormat="Packaged Nitrogen Gas" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="packaged_nitrogen_gas">
+                <BitmapImage UriSource="/images\items\packaged_nitrogen_gas.png"/>
+            </Button>
+
+
+
+        </Grid>
+    </ScrollViewer>
+</UserControl>

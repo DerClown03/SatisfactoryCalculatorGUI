@@ -1,0 +1,6 @@
+1, 1, i, copper_ore, 30, o, copper_ingot, 30, n
+1, 1, i, iron_ore, 30, o, iron_ingot, 30, n
+1, 1, i, aluminum_scrap, 60, o, aluminum_ingot, 30, a
+1, 1, i, caterium_ore, 45, o, caterium_ingot, 15, n
+1, 1, i, ficsmas_gift, 5, o, red_ficsmas_ornament, 5, n
+1, 1, i, ficsmas_gift, 5, o, blue_ficsmas_ornament, 10, n

@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="SatisfactoryCalculatorGUI.MVVM.View.industrial_parts_view"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:viewModel="clr-namespace:SatisfactoryCalculatorGUI.MVVM.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <viewModel:MainViewModel x:Key="viewModel"/>
+    </UserControl.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Hidden">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="0" ContentStringFormat="Rotor" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="rotor">
+                <BitmapImage UriSource="/images\items\rotor.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="0" ContentStringFormat="Stator" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="stator">
+                <BitmapImage UriSource="/images\items\stator.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="2" Grid.Row="0" ContentStringFormat="Battery" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="battery">
+                <BitmapImage UriSource="/images\items\battery.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="3" Grid.Row="0" ContentStringFormat="Motor" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="motor">
+                <BitmapImage UriSource="/images\items\motor.png"/>
+            </Button>
+
+            <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="1" ContentStringFormat="Heat Sink" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="heat_sink">
+                <BitmapImage UriSource="/images\items\heat_sink.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="1" ContentStringFormat="Cooling System" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="cooling_system">
+                <BitmapImage UriSource="/images\items\cooling_system.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="2" Grid.Row="1" ContentStringFormat="Turbomotor" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="turbo_motor">
+                <BitmapImage UriSource="/images\items\turbo_motor.png"/>
+            </Button>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

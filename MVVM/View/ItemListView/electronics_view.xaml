@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="SatisfactoryCalculatorGUI.MVVM.View.electronics_view"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:viewModel="clr-namespace:SatisfactoryCalculatorGUI.MVVM.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <viewModel:MainViewModel x:Key="viewModel"/>
+    </UserControl.Resources>
+ 
+    <ScrollViewer VerticalScrollBarVisibility="Hidden">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="0" ContentStringFormat="Wire" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="wire">
+                <BitmapImage UriSource="/images\items\wire.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="0" ContentStringFormat="Cable" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="cable">
+                <BitmapImage UriSource="/images\items\cable.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="2" Grid.Row="0" ContentStringFormat="Quickwire" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="quickwire">
+                <BitmapImage UriSource="/images\items\quickwire.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="3" Grid.Row="0" ContentStringFormat="Circuit Board" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="circuit_board">
+                <BitmapImage UriSource="/images\items\circuit_board.png"/>
+            </Button>
+
+            <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="1" ContentStringFormat="AI Limiter" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="ai_limiter">
+                <BitmapImage UriSource="/images\items\ai_limiter.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="1" ContentStringFormat="High-Speed Connector"  Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="high_speed_connector">
+                <BitmapImage UriSource="/images\items\high_speed_connector.png"/>
+            </Button>
+
+        </Grid>
+    </ScrollViewer>
+</UserControl>

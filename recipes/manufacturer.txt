@@ -1,0 +1,36 @@
+3, 1, i, aluminum_casing, 40, crystal_oscillator, 1.25, computer, 1.25, o, radio_control_unit, 2.5, n
+3, 1, i, quartz_crystal, 18, cable, 14, reinforced_iron_plate, 2.5, o, crystal_oscillator, 1, n
+3, 1, i, modular_frame, 3.75, steel_beam, 22.5, rubber, 30, o, versatile_framework, 7.5, a
+4, 1, i, modular_frame, 18.75, encased_industrial_beam, 22.5, rubber, 75, screw, 390, o, heavy_modular_frame, 3.75, a
+4, 1, i, circuit_board, 25, cable, 22.5, plastic, 45, screw, 130, o, computer, 2.5, n
+3, 1, i, motor, 2, rubber, 15, smart_plating, 2, o, modular_engine, 1, n
+4, 1, i, automated_wiring, 7.5, circuit_board, 5, heavy_modular_frame, 1, computer, 1, o, adaptive_control_unit, 1, n
+3, 1, i, stator, 3.75, wire, 75, high_speed_connector, 1.875, o, automated_wiring, 7.5, a
+4, 1, i, modular_frame, 10, steel_pipe, 30, encased_industrial_beam, 10, screw, 200, o, heavy_modular_frame, 2, n
+3, 1, i, reinforced_iron_plate, 2.5, rotor, 2.5, plastic, 7.5, o, smart_plating, 5, a
+4, 1, i, sulfur, 45, alclad_aluminum_sheet, 52.2, plastic, 60, wire, 90, o, battery, 30, a
+4, 1, i, computer, 3.75, ai_limiter, 3.75, high_speed_connector, 5.625, plastic, 52.5, o, supercomputer, 1.875, n
+3, 1, i, quickwire, 210, cable, 37.5, circuit_board, 3.75, o, high_speed_connector, 3.75, n
+4, 1, i, encased_plutonium_cell, 7.5, steel_beam, 4.5, electromagnetic_control_rod, 1.5, heat_sink, 2.5, o, plutonium_fuel_rod, 0.25, n
+4, 1, i, crystal_oscillator, 1.5, circuit_board, 15, aluminum_casing, 90, rubber, 45, o, radio_control_unit, 4.5, a
+4, 1, i, computer, 3.6, electromagnetic_control_rod, 2.4, battery, 24, wire, 54, o, supercomputer, 2.4, a
+3, 1, i, encased_uranium_cell, 20, encased_industrial_beam, 1.2, electromagnetic_control_rod, 2, o, uranium_fuel_rod, 0.4, n
+3, 1, i, versatile_framework, 2.5, electromagnetic_control_rod, 1, battery, 5, o, magnetic_field_generator, 1, n
+4, 1, i, motor, 7.5, pressure_conversion_cube, 1.875, packed_nitrogen_gas, 45, stator, 15, o, turbo_motor, 3.75, a
+3, 1, i, steel_beam, 2, steel_pipe, 8, crystal_oscillator, 0.5, o, beacon, 10, a
+3, 1, i, circuit_board, 26.25, quickwire, 105, rubber, 45, o, computer, 3.75, a
+3, 1, i, quartz_crystal, 18.75, rubber, 13.125, ai_limiter, 1.875, o, crystal_oscillator, 1.875, a
+4, 1, i, modular_frame, 7.5, encased_industrial_beam, 9.375, steel_pipe, 33.75, concrete, 20.625, o, heavy_modular_frame, 2.8125, a
+3, 1, i, quickwire, 90, silica, 37.5, circuit_board, 3, o, high_speed_connector, 3, a
+3, 1, i, rotor, 3.75, stator, 3.75, crystal_oscillator, 1.25, o, motor, 7.5, a
+3, 1, i, black_powder, 12, steel_pipe, 12, crystal_oscillator, 1.5, o, nobelisk, 6, a
+4, 1, i, encased_uranium_cell, 20, electromagnetic_control_rod, 2, crystal_oscillator, 0.6, beacon, 1.2, o, uranium_fuel_rod, 0.6, a
+3, 1, i, heat_sink, 15, high_speed_connector, 7.5, quartz_crystal, 45, o, radio_control_unit, 3.75, a
+4, 1, i, motor, 6.5625, radio_control_unit, 8.4375, electromagnetic_control_rod, 4.6875, rotor, 6.5625, o, turbo_motor, 2.8125, a
+4, 1, i, cooling_system, 7.5, radio_control_unit, 3.75, motor, 7.5, rubber, 45, o, turbo_motor, 1.875, n
+4, 1, i, modular_engine, 2.5, turbo_motor, 1, cooling_system, 3, fused_modular_frame, 1, o, thermal_propulsion_rocket, 1, n
+4, 1, i, uranium, 25, silica, 15, sulfur, 25, quickwire, 75, o, encased_uranium_cell, 20, a
+4, 1, i, iron_plate, 22.5, iron_rod, 7.5, wire, 112.5, cable, 15, o, beacon, 7.5, n
+3, 1, i, coal, 37.5, rubber, 15, fabric, 15, o, gas_filter, 7.5, n
+3, 1, i, gas_filter, 3.75, quickwire, 30, aluminum_casing, 3.75, o, iodine_infused_filter, 3.75, n
+4, 1, i, beacon, 3, steel_pipe, 30, black_powder, 30, rubber, 30, o, rifle_cartridge, 15, n

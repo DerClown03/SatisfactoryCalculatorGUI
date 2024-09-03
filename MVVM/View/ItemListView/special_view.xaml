@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="SatisfactoryCalculatorGUI.MVVM.View.special_view"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:viewModel="clr-namespace:SatisfactoryCalculatorGUI.MVVM.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <viewModel:MainViewModel x:Key="viewModel"/>
+    </UserControl.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Hidden">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="0" ContentStringFormat="Smart Plating" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="smart_plating">
+                <BitmapImage UriSource="/images\items\smart_plating.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="0" ContentStringFormat="Versatile Framework" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="versatile_framework">
+                <BitmapImage UriSource="/images\items\versatile_framework.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="2" Grid.Row="0" ContentStringFormat="Automated Wiring" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="automated_wiring">
+                <BitmapImage UriSource="/images\items\automated_wiring.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="3" Grid.Row="0" ContentStringFormat="Modular Engine" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="modular_engine">
+                <BitmapImage UriSource="/images\items\modular_engine.png"/>
+            </Button>
+
+            <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="1" ContentStringFormat="Adaptive Control Unit" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="adaptive_control_unit">
+                <BitmapImage UriSource="/images\items\adaptive_control_unit.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="1" ContentStringFormat="Assembly Director System" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="assembly_director_system">
+                <BitmapImage UriSource="/images\items\assembly_director_system.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="2" Grid.Row="1" ContentStringFormat="Magnetic Field Generator" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="magnetic_field_generator">
+                <BitmapImage UriSource="/images\items\magnetic_field_generator.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="3" Grid.Row="1" ContentStringFormat="Thermal Propulsion Rocket" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="thermal_propulsion_rocket">
+                <BitmapImage UriSource="/images\items\thermal_propulsion_rocket.png"/>
+            </Button>
+
+            <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="2" ContentStringFormat="Nuclear Pasta" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="nuclear_pasta">
+                <BitmapImage UriSource="/images\items\nuclear_pasta.png"/>
+            </Button>
+
+        </Grid>
+    </ScrollViewer>
+</UserControl>

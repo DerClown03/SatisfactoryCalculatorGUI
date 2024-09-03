@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="SatisfactoryCalculatorGUI.MVVM.View.standard_parts_view"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:viewModel="clr-namespace:SatisfactoryCalculatorGUI.MVVM.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <viewModel:MainViewModel x:Key="viewModel"/>
+    </UserControl.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Hidden">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="0" ContentStringFormat="Iron Rod" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="iron_rod">
+                <BitmapImage UriSource="/images\items\iron_rod.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="0" ContentStringFormat="Screw" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="screw">
+                <BitmapImage UriSource="/images\items\screw.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="2" Grid.Row="0" ContentStringFormat="Iron Plate" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="iron_plate">
+                <BitmapImage UriSource="/images\items\iron_plate.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="3" Grid.Row="0" ContentStringFormat="Reinforced Iron Plate" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="reinforced_iron_plate">
+                <BitmapImage UriSource="/images\items\reinforced_iron_plate.png"/>
+            </Button>
+
+            <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="1" ContentStringFormat="Copper Sheet" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="copper_sheet">
+                <BitmapImage UriSource="/images\items\copper_sheet.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="1" ContentStringFormat="Alclad Aluminum Sheet" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="alclad_aluminum_sheet">
+                <BitmapImage UriSource="/images\items\alclad_aluminum_sheet.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="2" Grid.Row="1" ContentStringFormat="Aluminum Casing" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="aluminum_casing">
+                <BitmapImage UriSource="/images\items\aluminum_casing.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="3" Grid.Row="1" ContentStringFormat="Steel Pipe" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="steel_pipe">
+                <BitmapImage UriSource="/images\items\steel_pipe.png"/>
+            </Button>
+
+            <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="2" ContentStringFormat="Steel Beam" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="steel_beam">
+                <BitmapImage UriSource="/images\items\steel_beam.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="2" ContentStringFormat="Encased Industrial Beam" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="encased_industrial_beam">
+                <BitmapImage UriSource="/images\items\encased_industrial_beam.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="2" Grid.Row="2" ContentStringFormat="Modular Frame" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="modular_frame">
+                <BitmapImage UriSource="/images\items\modular_frame.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="3" Grid.Row="2" ContentStringFormat="Heavy Modular Frame" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="heavy_modular_frame">
+                <BitmapImage UriSource="/images\items\heavy_modular_frame.png"/>
+            </Button>
+
+            <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="3" ContentStringFormat="Fused Modular Frame" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="fused_modular_frame">
+                <BitmapImage UriSource="/images\items\fused_modular_frame.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="3" ContentStringFormat="Fabric" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="fabric">
+                <BitmapImage UriSource="/images\items\fabric.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="2" Grid.Row="3" ContentStringFormat="Plastic" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="plastic">
+                <BitmapImage UriSource="/images\items\plastic.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="3" Grid.Row="3" ContentStringFormat="Rubber" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="rubber">
+                <BitmapImage UriSource="/images\items\rubber.png"/>
+            </Button>
+
+        </Grid>
+    </ScrollViewer>
+</UserControl>

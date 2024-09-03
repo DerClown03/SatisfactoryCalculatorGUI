@@ -1,0 +1,28 @@
+1, 2, i, crude_oil, 60, o, fuel, 40, polymer_resin, 30, n
+1, 1, i, heavy_oil_residue, 40, o, petroleum_coke, 120, n
+1, 2, i, crude_oil, 30, o, plastic, 20, heavy_oil_residue, 10, n
+1, 2, i, crude_oil, 30, o, rubber, 20, heavy_oil_residue, 20, n
+1, 1, i, heavy_oil_residue, 60, o, fuel, 40, n
+2, 1, i, polymer_resin, 60, water, 20, o, plastic, 20, n
+2, 1, i, polymer_resin, 40, water, 40, o, rubber, 20, n
+2, 1, i, wire, 37.5, heavy_oil_residue, 15, o, cable, 67.5, a
+2, 1, i, solid_biofuel, 90, water, 45, o, liquid_biofuel, 60, n
+2, 1, i, heavy_oil_residue, 30, packaged_water, 60, o, packaged_fuel, 60, a
+2, 2, i, alumina_solution, 180, petroleum_coke, 60, o, aluminum_scrap, 300, water, 105, a
+2, 2, i, bauxite, 120, water, 180, o, alumina_solution, 120, silica, 50, n
+2, 2, i, alumina_solution, 240, coal, 120, o, aluminum_scrap, 360, water, 120, n
+1, 2, i, crude_oil, 30, o, heavy_oil_residue, 40, polymer_resin, 20, n
+2, 1, i, polymer_resin, 80, water, 50, o, fabric, 5, a
+1, 2, i, crude_oil, 60, o, polymer_resin, 130, heavy_oil_residue, 20, a
+2, 1, i, caterium_ore, 24, water, 24, o, caterium_ingot, 12, a
+2, 1, i, copper_ore, 15, water, 10, o, copper_ingot, 37.5, a
+2, 1, i, iron_ore, 35, water, 20, o, iron_ingot, 65, a
+2, 1, i, raw_quartz, 67.5, water, 37.5, o, quartz_crystal, 52.5, a
+2, 1, i, plastic, 30, fuel, 30, o, rubber, 60, a
+2, 1, i, copper_ingot, 22.5, water, 22.5, o, copper_sheet, 22.5, a
+2, 1, i, heavy_oil_residue, 37.5, compacted_coal, 30, o, turbofuel, 30, a
+2, 1, i, limestone, 120, water, 100, o, concrete, 80, a
+2, 1, i, sulfur, 50, water, 50, o, sulfuric_acid, 50, n
+2, 1, i, bauxite, 200, water, 200, o, alumina_solution, 240, a
+2, 1, i, rubber, 30, fuel, 30, o, plastic, 60, a
+2, 1, i, fuel, 22.5, compacted_coal, 15, o, turbofuel, 18.75, n

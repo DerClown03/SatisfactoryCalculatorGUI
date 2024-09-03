@@ -1,0 +1,170 @@
+﻿<Window x:Class="SatisfactoryCalculatorGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModel="clr-namespace:SatisfactoryCalculatorGUI.MVVM.ViewModel"
+        xmlns:local="clr-namespace:SatisfactoryCalculatorGUI"
+        mc:Ignorable="d"
+        Height="510" Width="800"
+        MinHeight="510" MinWidth="800"
+        Background="#222222"
+        WindowStyle="None"
+        ResizeMode="CanResizeWithGrip"
+        AllowsTransparency="True"
+        Icon="/images/SatisfactoryCalculatorIcon.ico"
+        Title="Satisfactory Calculator">
+
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Border Background="#151515" MouseDown="Border_MouseDown">
+            <DockPanel>
+                <TextBlock Text="Satisfactory Calculator"
+                           Foreground="Gray"
+                           FontSize="15"
+                           VerticalAlignment="Center"
+                           Margin="10, 0"
+                           DockPanel.Dock="Left"/>
+
+                <Button Style="{StaticResource WindowButton}"
+                        DockPanel.Dock="Right"
+                        HorizontalAlignment="Right"
+                        Content="✕"
+                        Click="Close_Click"
+                        FontWeight="Bold"/>
+                
+                <Button Style="{StaticResource WindowButton}"
+                        DockPanel.Dock="Right"
+                        HorizontalAlignment="Right"
+                        Content="□"
+                        FontSize="20"
+                        Padding="0, -8, 0, 0"
+                        Click="WindowState_Click"
+                        FontWeight="Bold"/>
+
+                <Button Style="{StaticResource WindowButton}"
+                        DockPanel.Dock="Right"
+                        HorizontalAlignment="Right"
+                        Content="___"
+                        Padding="0, -3, 0, 0"
+                        Click="Minimize_Click"
+                        FontWeight="Bold"/>
+
+            </DockPanel>
+        </Border>
+        
+        <Grid x:Name="AllGrid" Grid.Row="1">
+
+            <Grid Background="#222222" x:Name="ItemListGrid">
+
+                <Grid.Effect>
+                    <BlurEffect Radius="{Binding BlurEffectSetter}"/>
+                </Grid.Effect>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="6*"/>
+                </Grid.RowDefinitions>
+
+                <Rectangle Fill="#333333"
+                           Grid.RowSpan="2"/>
+
+                <Image Source="/images/fiscit_logo.png"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Stretch="Uniform"
+                       Margin="10, -15"/>
+
+                <!--<Border Grid.Column="1" 
+                        Grid.RowSpan="2" 
+                        BorderBrush="Black" 
+                        BorderThickness="3,0,0,0" 
+                        Background="{x:Null}" />-->
+
+                <TextBlock Margin="25, 0, 0, 0"
+                           Grid.Column="1" 
+                           Text="Items" 
+                           Foreground="White" 
+                           VerticalAlignment="Center"
+                           FontSize="30"
+                           FontWeight="Bold"/>
+
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Hidden">
+                    <StackPanel>
+                        <RadioButton Style="{StaticResource category_button}"
+                                     Foreground="White"
+                                     Content="Ingots"
+                                     IsChecked="True"
+                                     Command="{Binding IngotsViewCommand}"/>
+                        <RadioButton Style="{StaticResource category_button}"
+                                     Foreground="White"
+                                     Content="Minerals"
+                                     Command="{Binding MineralsViewCommand}"/>
+                        <RadioButton Style="{StaticResource category_button}"
+                                     Foreground="White"
+                                     Content="Liquids"
+                                     Command="{Binding LiquidsViewCommand}"/>
+                        <RadioButton Style="{StaticResource category_button}"
+                                     Foreground="White"
+                                     Content="Standard Parts"
+                                     Command="{Binding StandardPartsViewCommand}"/>
+                        <RadioButton Style="{StaticResource category_button}"
+                                     Foreground="White"
+                                     Content="Industrial Parts"
+                                     Command="{Binding IndustrialPartsViewCommand}"/>
+                        <RadioButton Style="{StaticResource category_button}"
+                                     Foreground="White"
+                                     Content="Electronics"
+                                     Command="{Binding ElectronicsViewCommand}"/>
+                        <RadioButton Style="{StaticResource category_button}"
+                                     Foreground="White"
+                                     Content="Communications"
+                                     Command="{Binding CommuicationsViewCommand}"/>
+                        <RadioButton Style="{StaticResource category_button}"
+                                     Foreground="White"
+                                     Content="Containers"
+                                     Command="{Binding ContainersViewCommand}"/>
+                        <RadioButton Style="{StaticResource category_button}"
+                                     Foreground="White"
+                                     Content="Fuels"
+                                     Command="{Binding FuelsViewCommand}"/>
+                        <RadioButton Style="{StaticResource category_button}"
+                                     Foreground="White"
+                                     Content="Consumed"
+                                     Command="{Binding ConsumedViewCommand}"/>
+                        <RadioButton Style="{StaticResource category_button}"
+                                     Foreground="White"
+                                     Content="Nuclear"
+                                     Command="{Binding NuclearViewCommand}"/>
+                        <RadioButton Style="{StaticResource category_button}"
+                                     Foreground="White"
+                                     Content="Special"
+                                     Command="{Binding SpecialViewCommand}"/>
+                    </StackPanel>
+                </ScrollViewer>
+
+                <ContentControl Grid.Row="1"
+                                Grid.Column="1"
+                                Margin="10, 5, -10, 5"
+                                Content="{Binding ItemListView}"/>
+            </Grid>
+
+            <ContentControl Content="{Binding MainView}"
+                            Grid.Column="0"
+                            Grid.Row="0"/>
+
+        </Grid>
+    </Grid>
+</Window>
