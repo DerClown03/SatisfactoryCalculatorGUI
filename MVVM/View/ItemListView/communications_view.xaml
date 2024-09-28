@@ -21,6 +21,7 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
             <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="0" ContentStringFormat="Computer" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="computer">
@@ -34,6 +35,10 @@
             </Button>
             <Button Style="{StaticResource item_button}" Grid.Column="3" Grid.Row="0" ContentStringFormat="Crystal Oscillator" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="crystal_oscillator">
                 <BitmapImage UriSource="/images\items\crystal_oscillator.png"/>
+            </Button>
+
+            <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="1" ContentStringFormat="Superposition Oscillator" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="superposition_oscillator">
+                <BitmapImage UriSource="/images\items\superposition_oscillator.png"/>
             </Button>
         </Grid>
     </ScrollViewer>

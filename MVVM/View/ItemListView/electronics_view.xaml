@@ -43,6 +43,12 @@
             <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="1" ContentStringFormat="High-Speed Connector"  Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="high_speed_connector">
                 <BitmapImage UriSource="/images\items\high_speed_connector.png"/>
             </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="2" Grid.Row="1" ContentStringFormat="Reanimated SAM" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="reanimated_sam">
+                <BitmapImage UriSource="/images\items\reanimated_sam.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="3" Grid.Row="1" ContentStringFormat="SAM Fluctuator"  Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="sam_fluctuator">
+                <BitmapImage UriSource="/images\items\sam_fluctuator.png"/>
+            </Button>
 
         </Grid>
     </ScrollViewer>

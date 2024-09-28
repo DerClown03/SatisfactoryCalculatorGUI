@@ -70,8 +70,8 @@
                 </Grid.Effect>
 
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="5*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*"/>
@@ -118,6 +118,10 @@
                                      Command="{Binding LiquidsViewCommand}"/>
                         <RadioButton Style="{StaticResource category_button}"
                                      Foreground="White"
+                                     Content="Gas"
+                                     Command="{Binding GasViewCommand}"/>
+                        <RadioButton Style="{StaticResource category_button}"
+                                     Foreground="White"
                                      Content="Standard Parts"
                                      Command="{Binding StandardPartsViewCommand}"/>
                         <RadioButton Style="{StaticResource category_button}"
@@ -134,6 +138,10 @@
                                      Command="{Binding CommuicationsViewCommand}"/>
                         <RadioButton Style="{StaticResource category_button}"
                                      Foreground="White"
+                                     Content="Quantum Technology"
+                                     Command="{Binding QuantumTechnologyViewCommand}"/>
+                        <RadioButton Style="{StaticResource category_button}"
+                                     Foreground="White"
                                      Content="Containers"
                                      Command="{Binding ContainersViewCommand}"/>
                         <RadioButton Style="{StaticResource category_button}"
@@ -144,6 +152,10 @@
                                      Foreground="White"
                                      Content="Consumed"
                                      Command="{Binding ConsumedViewCommand}"/>
+                        <RadioButton Style="{StaticResource category_button}"
+                                     Foreground="White"
+                                     Content="Ammos"
+                                     Command="{Binding AmmosViewCommand}"/>
                         <RadioButton Style="{StaticResource category_button}"
                                      Foreground="White"
                                      Content="Nuclear"

@@ -12,12 +12,16 @@
 2, 2, i, bauxite, 120, water, 180, o, alumina_solution, 120, silica, 50, n
 2, 2, i, alumina_solution, 240, coal, 120, o, aluminum_scrap, 360, water, 120, n
 1, 2, i, crude_oil, 30, o, heavy_oil_residue, 40, polymer_resin, 20, n
-2, 1, i, polymer_resin, 80, water, 50, o, fabric, 5, a
+2, 1, i, polymer_resin, 30, water, 30, o, fabric, 30, a
 1, 2, i, crude_oil, 60, o, polymer_resin, 130, heavy_oil_residue, 20, a
 2, 1, i, caterium_ore, 24, water, 24, o, caterium_ingot, 12, a
+2, 1, i, caterium_ore, 54, sulfuric_acid, 30, o, caterium_ingot, 36, a
 2, 1, i, copper_ore, 15, water, 10, o, copper_ingot, 37.5, a
+2, 1, i, copper_ore, 45, sulfuric_acid, 25, o, copper_ingot, 110, a
 2, 1, i, iron_ore, 35, water, 20, o, iron_ingot, 65, a
+2, 1, i, iron_ore, 50, sulfuric_acid, 10, o, iron_ingot, 100, a
 2, 1, i, raw_quartz, 67.5, water, 37.5, o, quartz_crystal, 52.5, a
+2, 1, i, raw_quartz, 120, nitric_acid, 10, o, quartz_crystal, 75, dissolved_silica, 60, a
 2, 1, i, plastic, 30, fuel, 30, o, rubber, 60, a
 2, 1, i, copper_ingot, 22.5, water, 22.5, o, copper_sheet, 22.5, a
 2, 1, i, heavy_oil_residue, 37.5, compacted_coal, 30, o, turbofuel, 30, a
@@ -26,3 +30,5 @@
 2, 1, i, bauxite, 200, water, 200, o, alumina_solution, 240, a
 2, 1, i, rubber, 30, fuel, 30, o, plastic, 60, a
 2, 1, i, fuel, 22.5, compacted_coal, 15, o, turbofuel, 18.75, n
+2, 2, i, rocket_fuel, 40, power_shard, 2.5, o, ionized_fuel, 40, compacted_coal, 5, n
+2, 1, i, black_powder, 20, heavy_oil_residue, 10, o, smokeless_powder, 20, n

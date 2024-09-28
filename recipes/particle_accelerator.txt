@@ -1,3 +1,12 @@
-2, 1, i, non_fissile_uranium, 100, uranium_waste, 25, o, plutonium_pellet, 30, n
 2, 1, i, copper_powder, 100, pressure_conversion_cube, 0.5, o, nuclear_pasta, 0.5, n
+2, 1, i, diamonds, 30, dark_matter_residue, 150, o, dark_matter_crystal, 30, n
+2, 1, i, time_crystal, 30, dark_matter_residue, 150, o, dark_matter_crystal, 60, a
+1, 1, i, dark_matter_residue, 200, o, dark_matter_crystal, 20, a
+1, 1, i, coal, 600, o, diamonds, 30, n
+2, 1, i, coal, 240, limestone, 480, o, diamonds, 20, n
+1, 1, i, crude_oil, 200, o, diamonds, 40, n
+1, 1, i, petroleum_coke, 720, o, diamonds, 30, n
+2, 1, i, coal, 600, packaged_turbofuel, 40, o, diamonds, 60, n
+2, 1, i, non_fissile_uranium, 100, uranium_waste, 25, o, plutonium_pellet, 30, n
 2, 1, i, non_fissile_uranium, 75, aluminum_casing, 10, o, encased_plutonium_cell, 10, a
+3, 1, i, plutonium_waste, 10, singularity_cell, 10, dark_matter_residue, 200, o, ficsonium, 10, n

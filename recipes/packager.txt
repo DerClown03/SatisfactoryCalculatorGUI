@@ -11,6 +11,8 @@
 2, 1, i, alumina_solution, 120, empty_canister, 120, o, packaged_alumina_solution, 120, n
 1, 2, i, packaged_alumina_solution, 120, o, alumina_solution, 120, empty_canister, 120, n
 2, 1, i, turbofuel, 20, empty_canister, 20, o, packaged_turbofuel, 20, n
+2, 1, i, ionized_fuel, 80, empty_fluid_tank, 40, o, packaged_ionized_fuel, 40, n
+2, 1, i, rocket_fuel, 120, empty_fluid_tank, 60, o, packaged_rocket_fuel, 60, n
 1, 2, i, packaged_turbofuel, 20, o, turbofuel, 20, empty_canister, 20, n
 2, 1, i, sulfuric_acid, 40, empty_canister, 40, o, packaged_sulfuric_acid, 40, n
 1, 2, i, packaged_sulfuric_acid, 60, o, sulfuric_acid, 60, empty_canister, 60, n
@@ -18,3 +20,5 @@
 1, 2, i, packaged_nitrogen_gas, 60, o, nitrogen_gas, 240, empty_fluid_tank, 60, n
 2, 1, i, nitric_acid, 30, empty_fluid_tank, 30, o, packaged_nitric_acid, 30, n
 1, 2, i, packaged_nitric_acid, 20, o, nitric_acid, 20, empty_fluid_tank, 20, n
+1, 2, i, packaged_rocket_fuel, 60, o, rocket_fuel, 120, empty_fluid_tank, 60, n
+1, 2, i, packaged_ionized_fuel, 40, o, ionized_fuel, 80, empty_fluid_tank, 40, n

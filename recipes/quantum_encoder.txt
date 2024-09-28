@@ -1,0 +1,6 @@
+4, 2, i, magnetic_field_generator, 4, neural_quantum_processor, 4, superposition_oscillator, 4, excited_photonic_matter, 100, o, ai_expansion_server, 4, dark_matter_residue, 100, n
+4, 2, i, dark_matter_crystal, 30, crystal_oscillator, 5, alclad_aluminum_sheet, 45, excited_photonic_matter, 125, o, superposition_oscillator, 5, dark_matter_residue, 125, n
+4, 2, i, time_crystal, 15, supercomputer, 3, ficsite_trigon, 45, excited_photonic_matter, 75, o, neural_quantum_processor, 3, dark_matter_residue, 75, n
+4, 2, i, sam_fluctuator, 12.5, power_shard, 7.5, superposition_oscillator, 7.5, excited_photonic_matter, 60, o, alien_power_matrix, 2.5, dark_matter_residue, 60, n
+4, 2, i, ficsonium, 5, electromagnetic_control_rod, 5, ficsite_trigon, 100, excited_photonic_matter, 50, o, ficsonium_fuel_rod, 2.5, dark_matter_residue, 50, n
+4, 2, i, time_crystal, 10, dark_matter_crystal, 10, quartz_crystal, 60, excited_photonic_matter, 60, o, power_shard, 5, dark_matter_residue, 60, n

@@ -27,22 +27,13 @@
             <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="0" ContentStringFormat="Black Powder" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="black_powder">
                 <BitmapImage UriSource="/images\items\black_powder.png"/>
             </Button>
-            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="0" ContentStringFormat="Nobelisk" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="nobelisk">
-                <BitmapImage UriSource="/images\items\nobelisk.png"/>
+            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="0" ContentStringFormat="Smokeless Powder" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="smokeless_powder">
+                <BitmapImage UriSource="/images\items\smokeless_powder.png"/>
             </Button>
             <Button Style="{StaticResource item_button}" Grid.Column="2" Grid.Row="0" ContentStringFormat="Gas Filter" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="gas_filter">
                 <BitmapImage UriSource="/images\items\gas_filter.png"/>
             </Button>
-            <Button Style="{StaticResource item_button}" Grid.Column="3" Grid.Row="0" ContentStringFormat="Rifle Cartridge" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="rifle_cartridge">
-                <BitmapImage UriSource="/images\items\rifle_cartridge.png"/>
-            </Button>
-            <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="1" ContentStringFormat="Spiked Rebar" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="spiked_rebar">
-                <BitmapImage UriSource="/images\items\spiked_rebar.png"/>
-            </Button>
-            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="1" ContentStringFormat="Beacon" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="beacon">
-                <BitmapImage UriSource="/images\items\beacon.png"/>
-            </Button>
-            <Button Style="{StaticResource item_button}" Grid.Column="2" Grid.Row="1" ContentStringFormat="Iodine Infused Filter" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="iodine_infused_filter">
+            <Button Style="{StaticResource item_button}" Grid.Column="3" Grid.Row="0" ContentStringFormat="Iodine Infused Filter" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="iodine_infused_filter">
                 <BitmapImage UriSource="/images\items\iodine_infused_filter.png"/>
             </Button>
 

@@ -92,6 +92,10 @@ namespace SatisfactoryCalculatorGUI.MVVM.Model
             int counter = 0;
             foreach (Output item in this.Outputs)
             {
+                if (item.ItemName == "dark_matter_residue" && counter == 1) // I hate that I did this but I'm to lazy for a proper fix
+                {
+                    continue;
+                }
                 if (item.ItemName == searchedItem)
                 {
                     this.DesiredOutputIndex = counter;

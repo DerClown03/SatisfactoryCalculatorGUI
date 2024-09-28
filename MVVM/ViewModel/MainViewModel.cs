@@ -33,7 +33,7 @@ namespace SatisfactoryCalculatorGUI.MVVM.ViewModel
 
         public StringFormatting CustomCalculations = new StringFormatting();
         public SatisfactoryCalculator SatisfactoryCalculator = new SatisfactoryCalculator();
-        // Important (ViewCommands not working)
+        // Important (ViewCommands working)
         public RelayCommand QuantityChosenCommand { get; set; }
         public RelayCommand ItemQuantityCommand { get; set; }
         public RelayCommand RecipeOnceCommand { get; set; }
@@ -41,35 +41,41 @@ namespace SatisfactoryCalculatorGUI.MVVM.ViewModel
         public RelayCommand SaveFactoryPlanCommand { get; set; }
 
         // Not Important (ViewCommands Working)
+        public RelayCommand AmmosViewCommand { get; set; }
         public RelayCommand CommuicationsViewCommand { get; set; }
         public RelayCommand ConsumedViewCommand { get; set; }
         public RelayCommand ContainersViewCommand { get; set; }
         public RelayCommand ElectronicsViewCommand { get; set; }
         public RelayCommand FuelsViewCommand { get; set; }
+        public RelayCommand GasViewCommand { get; set; }
         public RelayCommand IndustrialPartsViewCommand { get; set; }
         public RelayCommand IngotsViewCommand { get; set; }
         public RelayCommand LiquidsViewCommand { get; set; }
         public RelayCommand MineralsViewCommand { get; set; }
         public RelayCommand NuclearViewCommand { get; set; }
+        public RelayCommand QuantumTechnologyViewCommand { get; set; }
         public RelayCommand SpecialViewCommand { get; set; }
         public RelayCommand StandardPartsViewCommand { get; set; }
 
-        // Important (not working)
+        // Important (Working)
         public ItemQuantityViewModel ItemQuantityVM { get; set; }
         public RecipesViewModel RecipesVM { get; set; }
         public ResultsViewModel ResultsVM { get; set; }
 
         // Not Important (Working)
+        public AmmosViewModel AmmosVM { set; get; }
         public CommunicationsViewModel CommunicationsVM { set; get; }
         public ConsumedViewModel ConsumedVM { set; get; }
         public ContainersViewModel ContainersVM { set; get; }
         public ElectronicsViewModel ElectronicsVM { set; get; }
         public FuelsViewModel FuelsVM { set; get; }
+        public GasViewModel GasVM { set; get; }
         public IndustrialPartsViewModel IndustrialPartsVM { set; get; }
         public IngotsViewModel IngotsVM { set; get; }
         public LiquidsViewModel LiquidsVM { set; get; }
         public MineralsViewModel MineralsVM { set; get; }
         public NuclearViewModel NuclearVM { set; get; }
+        public QuantumTechnologyViewModel QuantumTechnologyVM { set; get; }
         public SpecialViewModel SpecialVM { set; get; }
         public StandardPartsViewModel StandardPartsVM { set; get; }
 
@@ -211,21 +217,29 @@ namespace SatisfactoryCalculatorGUI.MVVM.ViewModel
             ResultsVM = new ResultsViewModel();
 
             // Not Important (working)
+            AmmosVM = new AmmosViewModel();
             CommunicationsVM = new CommunicationsViewModel();
             ConsumedVM = new ConsumedViewModel();
             ContainersVM = new ContainersViewModel();
             ElectronicsVM = new ElectronicsViewModel();
             FuelsVM = new FuelsViewModel();
+            GasVM = new GasViewModel();
             IndustrialPartsVM = new IndustrialPartsViewModel();
             IngotsVM = new IngotsViewModel();
             LiquidsVM = new LiquidsViewModel();
             MineralsVM = new MineralsViewModel();
             NuclearVM = new NuclearViewModel();
+            QuantumTechnologyVM = new QuantumTechnologyViewModel();
             SpecialVM = new SpecialViewModel();
             StandardPartsVM = new StandardPartsViewModel();
 
             // Not Important (working)
             ItemListView = IngotsVM;
+
+            AmmosViewCommand = new RelayCommand(o =>
+            {
+                ItemListView = AmmosVM;
+            });
 
             CommuicationsViewCommand = new RelayCommand(o =>
             {
@@ -252,6 +266,11 @@ namespace SatisfactoryCalculatorGUI.MVVM.ViewModel
                 ItemListView = FuelsVM;
             });
 
+            GasViewCommand = new RelayCommand(o =>
+            {
+                ItemListView = GasVM;
+            });
+
             IndustrialPartsViewCommand = new RelayCommand(o =>
             {
                 ItemListView = IndustrialPartsVM;
@@ -275,6 +294,11 @@ namespace SatisfactoryCalculatorGUI.MVVM.ViewModel
             NuclearViewCommand = new RelayCommand(o =>
             {
                 ItemListView = NuclearVM;
+            });
+
+            QuantumTechnologyViewCommand = new RelayCommand(o =>
+            {
+                ItemListView = QuantumTechnologyVM;
             });
 
             SpecialViewCommand = new RelayCommand(o =>

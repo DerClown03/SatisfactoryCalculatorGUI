@@ -1,0 +1,6 @@
+1, 1, i, diamonds, 12, o, time_crystal, 6, n
+1, 1, i, reanimated_sam, 50, o, dark_matter_residue, 100, n
+2, 1, i, coal, 120, quartz_crystal, 45, o, diamonds, 15, a
+2, 1, i, reanimated_sam, 40, iron_ingot, 240, o, ficsite_ingot, 10, n
+2, 1, i, reanimated_sam, 45, caterium_ingot, 60, o, ficsite_ingot, 15, n
+2, 1, i, reanimated_sam, 60, aluminum_ingot, 120, o, ficsite_ingot, 30, n

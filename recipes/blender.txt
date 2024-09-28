@@ -1,12 +1,17 @@
+3, 1, i, assembly_director_system, 0.5, ficsite_trigon, 40, water, 10, o, biochemical_sculptor, 2, n
+3, 2, i, dissolved_silica, 120, limestone, 50, water, 100, o, silica, 270, water, 80, n
 3, 2, i, uranium, 50, concrete, 15, sulfuric_acid, 40, o, encased_uranium_cell, 25, sulfuric_acid, 10, n
 4, 1, i, heat_sink, 12, rubber, 12, water, 30, nitrogen_gas, 150, o, cooling_system, 6, n
 3, 1, i, nitrogen_gas, 120, water, 30, iron_plate, 10, o, nitric_acid, 30, n
 4, 2, i, uranium_waste, 37.5, silica, 25, nitric_acid, 15, sulfuric_acid, 15, o, non_fissile_uranium, 50, water, 15, n
-3, 2, i, sulfuric_acid, 60, alumina_solution, 40, aluminum_casing, 20, o, battery, 20, water, 40, n
-3, 1, i, heat_sink, 9.375, motor, 1.875, nitrogen_gas, 45, o, cooling_system, 3.75, a
+3, 2, i, sulfuric_acid, 50, alumina_solution, 40, aluminum_casing, 20, o, battery, 20, water, 30, n
+3, 1, i, heat_sink, 10, motor, 2.5, nitrogen_gas, 60, o, cooling_system, 5, a
 3, 1, i, heavy_modular_frame, 1.5, aluminum_casing, 75, nitrogen_gas, 37.5, o, fused_modular_frame, 1.5, n
 2, 1, i, heavy_oil_residue, 50, water, 100, o, fuel, 100, a
 4, 2, i, uranium, 25, uranium_waste, 25, nitric_acid, 15, sulfuric_acid, 25, o, non_fissile_uranium, 100, water, 40, a
 4, 1, i, heavy_modular_frame, 3, aluminum_ingot, 150, nitric_acid, 24, fuel, 30, o, fused_modular_frame, 3, a
 4, 2, i, bauxite, 150, coal, 100, sulfuric_acid, 50, water, 60, o, aluminum_scrap, 300, water, 50, a
 4, 1, i, fuel, 15, heavy_oil_residue, 30, sulfur, 22.5, petroleum_coke, 22.5, o, turbofuel, 45, a
+2, 2, i, turbofuel, 60, nitric_acid, 10, o, rocket_fuel, 100, compacted_coal, 10, a
+4, 2, i, fuel, 100, nitrogen_gas, 75, sulfur, 100, coal, 50, o, rocket_fuel, 150, compacted_coal, 25, a
+3, 1, i, rifle_ammo, 125, aluminum_casing, 15, turbofuel, 15, o, turbo_rifle_ammo, 250, n

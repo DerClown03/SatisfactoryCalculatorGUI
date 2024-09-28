@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:viewModel="clr-namespace:SatisfactoryCalculatorGUI.MVVM.ViewModel"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="1200" d:DesignWidth="800">
 
     <UserControl.Resources>
         <viewModel:MainViewModel x:Key="viewModel"/>
@@ -20,6 +20,7 @@
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -68,13 +69,17 @@
             <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="3" ContentStringFormat="Fused Modular Frame" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="fused_modular_frame">
                 <BitmapImage UriSource="/images\items\fused_modular_frame.png"/>
             </Button>
-            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="3" ContentStringFormat="Fabric" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="fabric">
+            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="3" ContentStringFormat="Ficsite Trigon" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="ficsite_trigon">
+                <BitmapImage UriSource="/images\items\ficsite_trigon.png"/>
+            </Button>
+            <Button Style="{StaticResource item_button}" Grid.Column="2" Grid.Row="3" ContentStringFormat="Fabric" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="fabric">
                 <BitmapImage UriSource="/images\items\fabric.png"/>
             </Button>
-            <Button Style="{StaticResource item_button}" Grid.Column="2" Grid.Row="3" ContentStringFormat="Plastic" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="plastic">
+            <Button Style="{StaticResource item_button}" Grid.Column="3" Grid.Row="3" ContentStringFormat="Plastic" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="plastic">
                 <BitmapImage UriSource="/images\items\plastic.png"/>
             </Button>
-            <Button Style="{StaticResource item_button}" Grid.Column="3" Grid.Row="3" ContentStringFormat="Rubber" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="rubber">
+            
+            <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="4" ContentStringFormat="Rubber" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="rubber">
                 <BitmapImage UriSource="/images\items\rubber.png"/>
             </Button>
 

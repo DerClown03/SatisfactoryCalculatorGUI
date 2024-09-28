@@ -19,6 +19,7 @@
                 <ResourceDictionary Source="theme/WindowButton.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
+            
             <DataTemplate DataType="{x:Type viewModel:ResultsViewModel}">
                 <instructionsView:ResultsView/>
             </DataTemplate>
@@ -30,8 +31,12 @@
             <DataTemplate DataType="{x:Type viewModel:RecipesViewModel}">
                 <instructionsView:RecipesView/>
             </DataTemplate>
-            
-            
+
+
+            <DataTemplate DataType="{x:Type viewModel:AmmosViewModel}">
+                <view:ammos_view/>
+            </DataTemplate>
+
             <DataTemplate DataType="{x:Type viewModel:CommunicationsViewModel}">
                 <view:communications_view/>
             </DataTemplate>
@@ -52,6 +57,10 @@
                 <view:fuels_view/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:GasViewModel}">
+                <view:gas_view/>
+            </DataTemplate>
+
             <DataTemplate DataType="{x:Type viewModel:IndustrialPartsViewModel}">
                 <view:industrial_parts_view/>
             </DataTemplate>
@@ -70,6 +79,10 @@
 
             <DataTemplate DataType="{x:Type viewModel:NuclearViewModel}">
                 <view:nuclear_view/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:QuantumTechnologyViewModel}">
+                <view:quantum_technology_view/>
             </DataTemplate>
 
             <DataTemplate DataType="{x:Type viewModel:SpecialViewModel}">

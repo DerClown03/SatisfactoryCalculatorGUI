@@ -9,11 +9,15 @@
 1, 1, i, copper_ingot, 20, o, copper_sheet, 10, n
 1, 1, i, plastic, 30, o, empty_canister, 60, n
 1, 1, i, aluminum_ingot, 90, o, aluminum_casing, 60, n
+1, 1, i, ficsite_ingot, 10, o, ficsite_trigon, 30, n
 1, 1, i, raw_quartz, 37.5, o, quartz_crystal, 22.5, n
-1, 1, i, steel_ingot, 60, o, empty_canister, 40, a
+1, 1, i, steel_ingot, 40, o, empty_canister, 40, a
 1, 1, i, steel_ingot, 12, o, iron_rod, 48, a
+1, 1, i, aluminum_ingot, 7.5, o, iron_rod, 52.5, a
 1, 1, i, steel_ingot, 60, o, steel_beam, 15, n
+1, 1, i, aluminum_ingot, 22.5, o, steel_beam, 22.5, a
 1, 1, i, steel_ingot, 30, o, steel_pipe, 20, n
+1, 1, i, iron_ingot, 100, o, steel_pipe, 25, a
 1, 1, i, wood, 15, o, coal, 150, a
 1, 1, i, biomass, 37.5, o, coal, 45, a
 1, 1, i, aluminium_ingot, 60, o, empty_fluid_tank, 60, n
@@ -28,7 +32,9 @@
 1, 1, i, iron_rod, 15, o, spiked_rebar, 15, n
 1, 1, i, alien_organs, 7.5, o, biomass, 1500, n
 1, 1, i, caterium_ingot, 12, o, quickwire, 60, n
+1, 1, i, sam, 120, o, reanimated_sam, 30, n
 1, 1, i, mycelia, 150, o, biomass, 150, a
+1, 1, i, iron_rod, 15, o, iron_rebar, 15, n
 1, 1, i, ficsmas_gift, 15, o, candy_cane, 5, n
 1, 1, i, ficsmas_gift, 10, o, ficsmas_bow, 5, n
 1, 1, i, ficsmas_gift, 25, o, actual_snow, 10, n

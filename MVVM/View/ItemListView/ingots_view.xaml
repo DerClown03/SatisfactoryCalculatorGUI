@@ -40,7 +40,12 @@
             <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="1" ContentStringFormat="Aluminum Ingot" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="aluminum_ingot">
                 <BitmapImage UriSource="/images/items/aluminum_ingot.png"/>
             </Button>
-                
+
+            <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="1" ContentStringFormat="Ficsite Ingot" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="ficsite_ingot">
+                <BitmapImage UriSource="/images/items/ficsite_ingot.png"/>
+            </Button>
+
         </Grid>
     </ScrollViewer>
+    
 </UserControl>
