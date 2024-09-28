@@ -14,6 +14,7 @@ namespace SatisfactoryCalculatorGUI.MVVM.Model
             public string MachinesTreeArgs;
             public string DefaultResourcesArgs;
             public string BuildingResources;
+            public string LeftoverResourcesArgs;
             public string AllInformationArgs;
         }
 
@@ -25,7 +26,7 @@ namespace SatisfactoryCalculatorGUI.MVVM.Model
 
         private void Testing_OnCalculationFinished(object sender, SatisfactoryCalculator.OnCalculationFinishedEventArgs e)
         {
-            string AllInformation = $"Diagram\n{e.FactoryTreeString}\n\nAll Recipes\n{e.NeededRecipesString}\n\nAll Machines\n{e.NeededMachinesString}\n\nResources\n{e.NeededResourcesString}\n\nBuilding Resources\n{e.NeededBuildingResourcesString}\n ";
+            string AllInformation = $"Diagram\n{e.FactoryTreeString}\n\nAll Recipes\n{e.NeededRecipesString}\n\nAll Machines\n{e.NeededMachinesString}\n\nResources\n{e.NeededResourcesString}\n\nLeftover Resources\n{e.LeftoverResourcesString}\n\nBuilding Resources\n{e.NeededBuildingResourcesString}\n ";
 
             OnShowResultsEventArgs ShowResultsEA = new OnShowResultsEventArgs
             {
@@ -34,6 +35,7 @@ namespace SatisfactoryCalculatorGUI.MVVM.Model
                 MachinesTreeArgs = e.FactoryTreeString,
                 DefaultResourcesArgs = e.NeededResourcesString,
                 BuildingResources = e.NeededBuildingResourcesString,
+                LeftoverResourcesArgs = e.LeftoverResourcesString,
                 AllInformationArgs = AllInformation
             };
 

@@ -140,6 +140,17 @@ namespace SatisfactoryCalculatorGUI.MVVM.ViewModel
             }
         }
 
+        private string leftoverResources;
+        public string LeftoverResources
+        {
+            get => leftoverResources;
+            set
+            {
+                leftoverResources = value;
+                OnPropertyChanged();
+            }
+        }
+
         private string buildingResources;
         public string BuildingResources
         {
@@ -393,6 +404,7 @@ namespace SatisfactoryCalculatorGUI.MVVM.ViewModel
             MachinesList = e.MachinesListArgs;
             MachinesTree = e.MachinesTreeArgs;
             CountedMachines = e.CountedMachinesArgs;
+            LeftoverResources = e.LeftoverResourcesArgs;
             AllResultsInString = e.AllInformationArgs;
         }
     }

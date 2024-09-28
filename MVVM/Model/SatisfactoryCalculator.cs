@@ -24,7 +24,8 @@ namespace SatisfactoryCalculatorGUI.MVVM.Model
         public static Dictionary<string, int> NeededBuildingResources = new Dictionary<string, int>();
         public static Dictionary<string, int> FactoryTree = new Dictionary<string, int>();
         public static Dictionary<string, int> PermanentRecipes = new Dictionary<string, int>();
-        
+        public static Dictionary<string, int> LeftoverResources = new Dictionary<string, int>();
+
         public static Dictionary<string, MachineModel> MachineResources = CreateMachineModelHashMap(MACHINES);
 
         public static List<RecipeModel>[] AllRecipes = new List<RecipeModel>[MACHINES.Length];
@@ -45,6 +46,7 @@ namespace SatisfactoryCalculatorGUI.MVVM.Model
             public string NeededResourcesString;
             public string NeededMachinesString;
             public string NeededBuildingResourcesString;
+            public string LeftoverResourcesString;
         }
 
         public SatisfactoryCalculator()
@@ -63,6 +65,7 @@ namespace SatisfactoryCalculatorGUI.MVVM.Model
             NeededBuildingResources.Clear();
             FactoryTree.Clear();
             PermanentRecipes.Clear();
+            LeftoverResources.Clear();
         }
 
         private void Testing_OnResetCancellationToken(object sender, EventArgs e)
@@ -105,7 +108,8 @@ namespace SatisfactoryCalculatorGUI.MVVM.Model
                         NeededRecipesString = HashMapToSortedString(NeededRecipes, MACHINES, false, true),
                         NeededResourcesString = HashMapToSortedString(NeededResources, DEFAULTRESOURCES, true, false, true),
                         NeededMachinesString = HashMapToSortedString(NeededMachines, MACHINES),
-                        NeededBuildingResourcesString = HashMapToSortedString(NeededBuildingResources, null)
+                        NeededBuildingResourcesString = HashMapToSortedString(NeededBuildingResources, null),
+                        LeftoverResourcesString = HashMapToSortedString(LeftoverResources, null, true, false, true)
                     };
 
                     OnCalculationFinished?.Invoke(this, CalculationFinishedArgs);
@@ -164,6 +168,7 @@ namespace SatisfactoryCalculatorGUI.MVVM.Model
             double itemsProducedInOneMachine = chosenRecipe.Outputs[chosenRecipe.DesiredOutputIndex].ProducedPerMinute;
             int neededMachines = Convert.ToInt32(Math.Ceiling(wantedQuantity / itemsProducedInOneMachine));
             AddToBuildingResources(neededMachines, chosenRecipe.NameOfMachine);
+            AddToLeftoverResources(searchedItem, neededMachines, chosenRecipe);
             NeededMachines = SaveOrAddToHashMap(NeededMachines, chosenRecipe.NameOfMachineReadable, neededMachines);
             NeededRecipes = SaveOrAddToHashMap(NeededRecipes, chosenRecipe.NameOfMachineReadable + " for " + chosenRecipe.DesiredOutputItemName, neededMachines);
             FactoryTree = SaveOrAddToHashMap(FactoryTree, treeOutput + RecipeModel.MakeStringReadable(searchedItem) + " in " + neededMachines + " " + chosenRecipe.NameOfMachineReadable + "s:", Convert.ToInt32(wantedQuantity));
@@ -188,6 +193,27 @@ namespace SatisfactoryCalculatorGUI.MVVM.Model
                 }
                 i++;
             }
+        }
+
+        static void AddToLeftoverResources(string searchedItem, int neededMachines, RecipeModel recipe)
+        {
+            if (recipe.Outputs.Length == 1)
+                return;
+
+            int leftoverIndex = 0;
+            if (recipe.DesiredOutputIndex == 0)
+                leftoverIndex = 1;
+            else
+                leftoverIndex = 0;
+            string leftoverItem = recipe.Outputs[leftoverIndex].ItemNameReadable;
+
+            if (LeftoverResources.ContainsKey(leftoverItem))
+            {
+                LeftoverResources[leftoverItem] += Convert.ToInt32(recipe.Outputs[leftoverIndex].ProducedPerMinute * neededMachines);
+                return;
+            }
+            LeftoverResources.Add(leftoverItem, Convert.ToInt32(recipe.Outputs[leftoverIndex].ProducedPerMinute * neededMachines));
+            return;
         }
 
         static void AddToBuildingResources(int quantity, string nameOfMachine)
@@ -228,8 +254,10 @@ namespace SatisfactoryCalculatorGUI.MVVM.Model
             return RecipeIndex;
         }
 
-        static string HashMapToSortedString(Dictionary<string, int> hashmap, string[]? sortingReference = null, bool keyfirst = false, bool reverse = false, bool addPerMinute = false)
+        static string HashMapToSortedString(Dictionary<string, int> hashmap, string[] sortingReference = null, bool keyfirst = false, bool reverse = false, bool addPerMinute = false)
         {
+            if (hashmap.Count == 0)
+                return "No data";
             if (sortingReference == null)
             {
                 string noSortString = "";
