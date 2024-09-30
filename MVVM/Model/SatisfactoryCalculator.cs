@@ -15,7 +15,7 @@ namespace SatisfactoryCalculatorGUI.MVVM.Model
     public class SatisfactoryCalculator : ObservableObject
     {
         public static string RECIPEPATH = FindRecipesFolder();
-        public static string[] DEFAULTRESOURCES = new string[] { "limestone", "iron_ore", "copper_ore", "caterium_ore", "coal", "raw_quartz", "sulfur", "bauxite", "uranium", "water", "crude_oil", "nitrogen_gas", "uranium_waste", "excited_photonic_matter", "sam" };
+        public static string[] DEFAULTRESOURCES = new string[] { "limestone", "iron_ore", "copper_ore", "caterium_ore", "coal", "raw_quartz", "sulfur", "bauxite", "uranium", "water", "crude_oil", "nitrogen_gas", "uranium_waste", "plutonium_waste", "excited_photonic_matter", "sam" };
         public static string[] MACHINES = new string[] { "smelter", "foundry", "constructor", "assambler", "manufacturer", "refinery", "blender", "particle_accelerator", "quantum_encoder", "converter", "packager" };
 
         public static Dictionary<string, int> NeededMachines = new Dictionary<string, int>();

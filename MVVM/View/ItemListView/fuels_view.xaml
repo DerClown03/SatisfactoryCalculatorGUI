@@ -22,6 +22,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
             <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="0" ContentStringFormat="Biomass" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="biomass">
@@ -56,7 +57,6 @@
             <Button Style="{StaticResource item_button}" Grid.Column="1" Grid.Row="2" ContentStringFormat="Packaged Ionized Fuel" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="packaged_ionized_fuel">
                 <BitmapImage UriSource="/images\items\packaged_ionized_fuel.png"/>
             </Button>
-
             <Button Style="{StaticResource item_button}" Grid.Column="2" Grid.Row="2" ContentStringFormat="Uranium Fuel Rod" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="uranium_fuel_rod">
                 <BitmapImage UriSource="/images\items\uranium_fuel_rod.png"/>
             </Button>
@@ -64,6 +64,9 @@
                 <BitmapImage UriSource="/images\items\plutonium_fuel_rod.png"/>
             </Button>
 
+            <Button Style="{StaticResource item_button}" Grid.Column="0" Grid.Row="3" ContentStringFormat="Ficsonium Fuel Rod" Command="{Binding DataContext.ItemQuantityCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="ficsonium_fuel_rod">
+                <BitmapImage UriSource="/images\items\ficsonium_fuel_rod.png"/>
+            </Button>
 
         </Grid>
     </ScrollViewer>

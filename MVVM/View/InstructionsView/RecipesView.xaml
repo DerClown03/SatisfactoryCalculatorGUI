@@ -32,7 +32,10 @@
                        FontSize="25"
                        Margin="15, 0, 0, 0"
                        VerticalAlignment="Center"/>
-
+            
+            <Image Source="{Binding DataContext.ImagePath, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                   Margin="0, 0, 15, 0"/>
+            
             <TextBlock Text="("
                        Foreground="White"
                        FontSize="25"
@@ -46,8 +49,8 @@
                        FontSize="25"
                        VerticalAlignment="Center"/>
 
-            <Image Source="{Binding DataContext.ImagePath, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
-                   Margin="15, 0, 0, 0"/>
+            <!--<Image Source="{Binding DataContext.ImagePath, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                   Margin="15, 0, 0, 0"/>-->
         </StackPanel>
 
         <!--<Image Source="{Binding DataContext.ImagePath, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
