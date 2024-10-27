@@ -1,4 +1,5 @@
 # SatisfactoryCalculator
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/DerClown03/SatisfactoryCalculatorGUI/total?label=Downloads)
 A simple WPF application to calculate small and big factorys for Satisfactory
 
 How to install:
