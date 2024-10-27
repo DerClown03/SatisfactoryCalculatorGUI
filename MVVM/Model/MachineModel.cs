@@ -28,7 +28,7 @@ namespace SatisfactoryCalculatorGUI.MVVM.Model
             MACHINESDICT.Add("smelter", new string[,] { { "iron_rod", "5" }, { "wire", "8" }, { "concrete", "6" } }); // , { "concrete", "6" }
             MACHINESDICT.Add("foundry", new string[,] { { "modular_frame", "10" }, { "rotor", "10" }, { "concrete", "20" } }); // , { "concrete", "8" }
             MACHINESDICT.Add("constructor", new string[,] { { "reinforced_iron_plate", "2" }, { "cable", "8" } }); // , { "concrete", "9" }
-            MACHINESDICT.Add("assambler", new string[,] { { "reinforced_iron_plate", "8" }, { "rotor", "4" }, { "cable", "10" } }); // , { "concrete", "17" }
+            MACHINESDICT.Add("assembler", new string[,] { { "reinforced_iron_plate", "8" }, { "rotor", "4" }, { "cable", "10" } }); // , { "concrete", "17" }
             MACHINESDICT.Add("manufacturer", new string[,] { { "motor", "10" }, { "modular_frame", "20" }, { "cable", "50" }, { "plastic", "50" } }); // , { "concrete", "49" }
             MACHINESDICT.Add("refinery", new string[,] { { "motor", "10" }, { "encased_industrial_beam", "10" }, { "steel_pipe", "30" }, { "copper_sheet", "20" } }); // , { "concrete", "22" }
             MACHINESDICT.Add("blender", new string[,] { { "motor", "20" }, { "heavy_modular_frame", "10" }, { "aluminum_casing", "50" }, { "computer", "10" } }); // , { "concrete", "34" }
